@@ -302,19 +302,22 @@ $produits = $sqlProduits->fetchAll(PDO::FETCH_ASSOC);
         }
 
         .hero-shape {
-            width: 270px;
-            height: 270px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            color: var(--gold-light);
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            font-size: 70px;
-            font-weight: bold;
-        }
+  width: 270px;
+  height: 270px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
         /* Sections */
         .section {
@@ -700,7 +703,7 @@ $produits = $sqlProduits->fetchAll(PDO::FETCH_ASSOC);
     <div class="hero-content">
 
         <div class="hero-label">
-            Bienvenue chez ECOMERCE
+            BIENVENUE CHEZ VELORA
         </div>
 
         <h1>
@@ -719,9 +722,10 @@ $produits = $sqlProduits->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 
-    <div class="hero-shape">
-        E
-    </div>
+   <div class="hero-shape">
+  <img src="../images/vg.jpg" alt="Photo de présentation">
+</div>
+
 
 </section>
 
